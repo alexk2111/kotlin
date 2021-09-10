@@ -1,8 +1,9 @@
 fun increaseDirty(start: Int) = start + 1
 
 fun updateDirty(dirty: Int, operation: (Int) -> Int): Int {
-    return operation(dirty + 10)
+    return operation(dirty)
 }
+
 
 fun main() {
     var dirtyLevel = 20
@@ -11,10 +12,14 @@ fun main() {
     println(waterFilter(dirtyLevel))
     println(waterFilter1(dirtyLevel, dirtyLevel))
 
-    dirtyLevel = 19
-    dirtyLevel = updateDirty(dirtyLevel) { dirtyLevel2 -> dirtyLevel2 + 23 }
-    println(dirtyLevel)
-
     println(updateDirty(15, ::increaseDirty))
+
+    dirtyLevel = 19
+    dirtyLevel = updateDirty(dirtyLevel) { dirtyLevel2 ->
+        var result = dirtyLevel2 + 23
+        result *= 2
+        result
+    }
+    println(dirtyLevel)
 }
 
