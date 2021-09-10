@@ -4,6 +4,10 @@ fun updateDirty(dirty: Int, operation: (Int) -> Int): Int {
     return operation(dirty)
 }
 
+fun myFunction(x: Int, y: Int, perimeter: (Int, Int) -> Int): Int {
+    return perimeter(x, y)
+}
+
 
 fun main() {
     var dirtyLevel = 20
@@ -21,5 +25,10 @@ fun main() {
         result
     }
     println(dirtyLevel)
+
+    val height = 25
+    val width = 15
+    val perimeter = myFunction(height, width) { x: Int, y: Int -> x * 2 + y * 2 }
+    println("Perimeter: $perimeter")
 }
 
