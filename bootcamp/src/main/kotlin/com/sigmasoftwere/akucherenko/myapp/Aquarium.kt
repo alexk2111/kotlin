@@ -9,6 +9,4 @@ class Aquarium(var length: Int = 100, var width: Int = 20, var height: Int = 40)
                     "Height: $height cm "
         )
     }
-
-    fun volume() = width * height * length
 }
