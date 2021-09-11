@@ -6,6 +6,11 @@ fun buildAquarium() {
     myAquarium.height = 60
     myAquarium.printSize()
     println(myAquarium.volume())
+
+    val aquarium2 = Aquarium(width = 25)
+    aquarium2.printSize()
+    println(aquarium2.volume())
+
 }
 
 fun main() {
