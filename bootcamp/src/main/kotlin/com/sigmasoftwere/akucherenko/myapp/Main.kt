@@ -21,6 +21,15 @@ fun buildAquarium() {
     aquarium7.printSize()
     println("Volume: ${aquarium7.volume} l")
 
+    println("--------------------- Add a property setter")
+    val aquarium8 = Aquarium(numberOfFish = 35)
+    aquarium8.printSize()
+    println("Volume: ${aquarium8.volume} l")
+    aquarium8.volume = 90
+    aquarium8.printSize()
+    println("Volume: ${aquarium8.volume} l")
+
+
 }
 
 fun main() {
