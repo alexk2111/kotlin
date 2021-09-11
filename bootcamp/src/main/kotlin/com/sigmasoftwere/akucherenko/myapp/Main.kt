@@ -5,6 +5,7 @@ fun buildAquarium() {
     myAquarium.printSize()
     myAquarium.height = 60
     myAquarium.printSize()
+    println(myAquarium.volume())
 }
 
 fun main() {
