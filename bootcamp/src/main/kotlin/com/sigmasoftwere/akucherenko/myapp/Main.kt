@@ -11,10 +11,15 @@ fun buildAquarium() {
     aquarium2.printSize()
     println(aquarium2.volume())
 
-    println("---------------------")
+    println("--------------------- add secondary constructors")
     val aquarium6 = Aquarium(numberOfFish = 29)
     aquarium6.printSize()
     println(aquarium6.volume())
+
+    println("--------------------- add new property getter")
+    val aquarium7 = Aquarium(numberOfFish = 50)
+    aquarium7.printSize()
+    println("Volume: ${aquarium7.volume} l")
 
 }
 
