@@ -29,6 +29,10 @@ fun buildAquarium() {
     aquarium8.printSize()
     println("Volume: ${aquarium8.volume} l")
 
+    println("--------------------- TowerTank")
+    val myTower = TowerTank(diameter = 25, height = 40)
+    myTower.printSize()
+
 
 }
 
