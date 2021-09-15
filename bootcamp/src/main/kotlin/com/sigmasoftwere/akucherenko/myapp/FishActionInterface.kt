@@ -1,5 +1,5 @@
 package com.sigmasoftwere.akucherenko.myapp
 
-interface FishAction {
+interface FishActionInterface {
     fun eat()
 }
